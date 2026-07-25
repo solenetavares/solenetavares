@@ -1,252 +1,140 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solene Tavares | Full-Stack Software Engineering Student</title>
-    <style>
-        :root {
-            --bg-color: #0d0f12;
-            --card-bg: #161b22;
-            --text-main: #f0f6fc;
-            --accent-pink: #FFB6C1;
-            --accent-lavender: #D8BFD8;
-            --border-color: #30363d;
-        }
+# <span style="color:#D8BFD8;">🔮 Solene Tavares</span> | <span style="color:#FFB6C1;">Software Engineering Student</span>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
 
-        .container {
-            max-width: 850px;
-            width: 100%;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-        }
+<p align="left">
 
-        h1 {
-            font-size: 2rem;
-            color: var(--accent-lavender);
-            margin-bottom: 15px;
-        }
+  <img src="https://img.shields.io/badge/Status-Codando_no_Off-D8BFD8?style=for-the-badge&logoColor=black&labelColor=FFB6C1" alt="Status" />
 
-        h1 span.pink {
-            color: var(--accent-pink);
-        }
+  <img src="https://img.shields.io/badge/Focus-Systems_%26_Data_Analysis-FFB6C1?style=for-the-badge&logoColor=black&labelColor=D8BFD8" alt="Foco" />
 
-        .badges {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
+</p>
 
-        .badge {
-            background-color: var(--accent-pink);
-            color: #000000;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
 
-        .badge.lavender {
-            background-color: var(--accent-lavender);
-        }
 
-        h3 {
-            color: var(--accent-lavender);
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.25rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-        }
+### 🎀 Seja bem-vindo(a) ao meu servidor! 
 
-        p, li {
-            line-height: 1.6;
-            color: #c9d1d9;
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-        }
 
-        ul {
-            padding-left: 20px;
-        }
 
-        .stack-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-            gap: 12px;
-            margin: 20px 0;
-        }
+Sou estudante de **Engenharia de Software** com foco estratégico em **Análise de Sistemas e Análise de Dados**. O meu objetivo no ecossistema de tecnologia é traduzir requisitos de negócios em sistemas eficientes e transformar grandes volumes de dados brutos em insights valiosos para a tomada de decisão.
 
-        .stack-card {
-            background-color: #21262d;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 15px 10px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
 
-        .stack-card:hover {
-            transform: translateY(-3px);
-            border-color: var(--accent-pink);
-        }
 
-        .stack-card img {
-            width: 35px;
-            height: 35px;
-            margin-bottom: 8px;
-        }
+Atualmente, passo os meus finais de semana no off refinando a minha lógica em algoritmos, limpando bases de dados, criando queries complexas e acumulando commits. Até o fim do ano, a skin Fullstack integrada à análise de sistemas e dados será a minha realidade absoluta de mercado.
 
-        .stack-card span {
-            display: block;
-            font-size: 0.75rem;
-            font-weight: bold;
-            color: var(--text-main);
-        }
 
-        .stats {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            justify-content: flex-start;
-        }
 
-        .stats img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
+---
 
-        .contact-list {
-            list-style: none;
-            padding: 0;
-        }
 
-        .contact-list li {
-            margin-bottom: 8px;
-        }
 
-        .contact-list a {
-            color: var(--accent-pink);
-            text-decoration: none;
-        }
+### <span style="color:#D8BFD8;">🔮 Meu Tech Stack, Dados & Ferramentas</span>
 
-        .contact-list a:hover {
-            text-decoration: underline;
-        }
 
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: var(--accent-pink);
-            font-style: italic;
-            font-size: 0.9rem;
-        }
 
-        hr {
-            border: none;
-            border-top: 1px solid var(--border-color);
-            margin: 30px 0;
-        }
-    </style>
-</head>
-<body>
+<table>
 
-<div class="container">
-    
-    <h1>🔮 Solene Tavares | <span class="pink">Full-Stack Software Engineering Student</span></h1>
+  <tr>
 
-    <div class="badges">
-        <span class="badge">Status: Full Stack Mode</span>
-        <span class="badge lavender">Focus: Fullstack & Agile</span>
-    </div>
+    <td align="center" width="120" bgcolor="#FFB6C1">
 
-    <h3>🎀 Seja bem-vindo(a) ao meu servidor!</h3>
-    <p>Sou estudante de <strong>Engenharia de Software</strong> com foco em desenvolvimento <strong>Full-Stack</strong> e ecossistemas de tecnologia modernos. O meu objetivo é construir soluções completas de ponta a ponta, unindo a robustez do back-end com a interatividade e o design do front-end.</p>
-    <p>Atualmente, passo os meus dias estruturando códigos limpos, conectando APIs, gerenciando fluxos com metodologias ágeis e acumulando commits. A skin Fullstack integrada é a minha realidade absoluta de mercado.</p>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40" alt="Python" />
 
-    <hr>
+      <br /><b><font color="#000000">Python (Pandas)</font></b>
 
-    <h3>🔮 Meu Tech Stack & Ferramentas</h3>
-    
-    <div class="stack-grid">
-        <div class="stack-card">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python">
-            <span>Python (Pandas)</span>
-        </div>
-        <div class="stack-card">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java">
-            <span>Java</span>
-        </div>
-        <div class="stack-card">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
-            <span>JavaScript</span>
-        </div>
-        <div class="stack-card">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="SQL">
-            <span>SQL</span>
-        </div>
-        <div class="stack-card">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git">
-            <span>Git / GitHub</span>
-        </div>
-        <div class="stack-card">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5">
-            <span>HTML5 / CSS3</span>
-        </div>
-    </div>
+    </td>
 
-    <p><strong>Core Técnico (Full-Stack & Gestão):</strong></p>
-    <ul>
-        <li>🌐 <strong>Front-end & Back-end:</strong> Desenvolvimento de interfaces responsivas com HTML5, CSS3 e JavaScript, além de lógica de sistemas e manipulação de dados utilizando Java, Python (com Pandas) e bancos de dados relacionais via SQL.</li>
-        <li>⚙️ <strong>Ferramentas & DevOps:</strong> Versionamento de código com Git/GitHub e acompanhamento de infraestrutura com Azure DevOps.</li>
-        <li>🌟 <strong>Metodologias Ágeis:</strong> Organização de sprints, fluxos de entrega e rastreio de demandas utilizando Jira, Azure DevOps e quadros Kanban.</li>
-    </ul>
+    <td align="center" width="120" bgcolor="#D8BFD8">
 
-    <hr>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" height="40" alt="Java" />
 
-    <h3>📈 Estatísticas do Meu Ecossistema</h3>
-    <div class="stats">
-        <img src="https://github-readme-stats.vercel.app/api?username=solenetavares&show_icons=true&theme=omni&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" height="150" />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=solenetavares&layout=compact&theme=omni" alt="Linguagens mais usadas" height="150" />
-    </div>
+      <br /><b><font color="#000000">Java (JDK 21)</font></b>
 
-    <hr>
+    </td>
 
-    <h3>⚙️ Conecte-se ao meu Sistema:</h3>
-    <ul class="contact-list">
-        <li>📩 <strong>E-mail:</strong> <a href="mailto:solenetavares06@gmail.com">solenetavares06@gmail.com</a></li>
-    </ul>
+    <td align="center" width="120" bgcolor="#FFB6C1">
 
-    <div class="footer">
-        <p>"something 'bout me" 🎀</p>
-    </div>
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
 
-</div>
+      <br /><b><font color="#000000">JavaScript</font></b>
 
-</body>
-</html>
+    </td>
+
+    <td align="center" width="120" bgcolor="#D8BFD8">
+
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40" alt="SQL" />
+
+      <br /><b><font color="#000000">SQL / DB</font></b>
+
+    </td>
+
+    <td align="center" width="120" bgcolor="#FFB6C1">
+
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40" alt="Git" />
+
+      <br /><b><font color="#000000">Git / GitHub</font></b>
+
+    </td>
+
+    <td align="center" width="120" bgcolor="#D8BFD8">
+
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
+
+      <br /><b><font color="#000000">HTML5 / CSS3</font></b>
+
+    </td>
+
+  </tr>
+
+</table>
+
+
+
+**Core Técnico (Sistemas & Análise de Dados):** * 🔮 **Análise de Sistemas:** Engenharia de Requisitos, Mapeamento de Processos, Regras de Negócio e Diagramação UML.
+
+* 📊 **Análise de Dados:** Exploração, limpeza e manipulação de dados (Data Wrangling) com Python, consultas avançadas em bancos de dados relacionais (SQL) e extração de métricas.
+
+* 🌟 **Metodologias:** Gestão ágil de projetos e fluxos de trabalho com Scrum e Kanban.
+
+
+
+---
+
+
+
+### <span style="color:#FFB6C1;">📈 Estatísticas do Meu Ecossistema</span>
+
+
+
+<p align="left">
+
+  <img src="https://github-readme-stats.vercel.app/api?username=solenetavares&show_icons=true&theme=omni&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" height="150" />
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=solenetavares&layout=compact&theme=omni" alt="Linguagens mais usadas" height="150" />
+
+</p>
+
+
+
+---
+
+
+
+### <span style="color:#D8BFD8;">⚙️ Conecte-se ao meu Sistema:</span>
+
+
+
+* 📩 **E-mail:** solenetavares06@gmail.com
+
+
+
+<br />
+
+
+
+<p align="center">
+
+  <font color="#FFB6C1"><i>"something 'bout me"</i> 🎀</font>
+
+</p> 
+
