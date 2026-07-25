@@ -3,173 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Interativo para Programadores</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Solene Tavares | Full-Stack Software Engineering Student</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #161b22;
+            --text-main: #f0f6fc;
+            --accent-pink: #FFB6C1;
+            --accent-lavender: #D8BFD8;
+            --border-color: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-lavender);
+            margin-bottom: 15px;
+        }
+
+        h1 span.pink {
+            color: var(--accent-pink);
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background-color: var(--accent-pink);
+            color: #000000;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .badge.lavender {
+            background-color: var(--accent-lavender);
+        }
+
+        h3 {
+            color: var(--accent-lavender);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            line-height: 1.6;
+            color: #c9d1d9;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .stack-card {
+            background-color: #21262d;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 15px 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .stack-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-pink);
+        }
+
+        .stack-card img {
+            width: 35px;
+            height: 35px;
+            margin-bottom: 8px;
+        }
+
+        .stack-card span {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: var(--text-main);
+        }
+
+        .stats {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            justify-content: flex-start;
+        }
+
+        .stats img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 8px;
+        }
+
+        .contact-list a {
+            color: var(--accent-pink);
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--accent-pink);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="site-header">
-        <h1>Quiz Interativo para Programadores</h1>
-        <p><strong>Teste seus conhecimentos em programação e veja qual a sua pontuação!</strong></p>
-    </header>
 
-    <main class="quiz-container">
-        <!-- Introdução -->
-        <section class="card intro-card">
-            <h2>Sobre esse quiz</h2>
-            <p>Este quiz foi desenvolvido para desafiar programadores de todos os níveis. Ele contém uma série de perguntas que abrangem diferentes áreas da programação, desde lógica básica até conceitos avançados.</p>
-            <p>Ao final do quiz, você receberá uma pontuação que refletirá seu desempenho. Prepare-se para testar seus conhecimentos e aprender algo novo!</p>
-            <p>Você poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são linguagens de marcação e estilo, respectivamente. Além disso, conceitos como algoritmos, estruturas de dados e paradigmas de programação também serão abordados.</p>
-            <p><strong>Boa sorte!</strong></p>
-        </section>
+<div class="container">
+    
+    <h1>🔮 Solene Tavares | <span class="pink">Full-Stack Software Engineering Student</span></h1>
 
-        <!-- Formulário Geral do Quiz -->
-        <form id="quiz-form">
-            <!-- Pergunta 1 -->
-            <section class="card question-card">
-                <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas na web?</h2>
-                <div class="options-group">
-                    <label><input type="radio" value="Python" name="pergunta1"> a) Python</label>
-                    <label><input type="radio" value="Java" name="pergunta1"> b) Java</label>
-                    <label><input type="radio" value="HTML" name="pergunta1"> c) HTML</label>
-                    <label><input type="radio" value="C++" name="pergunta1"> d) C++</label>
-                </div>
-            </section> 
+    <div class="badges">
+        <span class="badge">Status: Full Stack Mode</span>
+        <span class="badge lavender">Focus: Fullstack & Agile</span>
+    </div>
 
-            <!-- Pergunta 2 -->
-            <section class="card question-card">
-                <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o ________</h2>
-                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui">
-            </section>
+    <h3>🎀 Seja bem-vindo(a) ao meu servidor!</h3>
+    <p>Sou estudante de <strong>Engenharia de Software</strong> com foco em desenvolvimento <strong>Full-Stack</strong> e ecossistemas de tecnologia modernos. O meu objetivo é construir soluções completas de ponta a ponta, unindo a robustez do back-end com a interatividade e o design do front-end.</p>
+    <p>Atualmente, passo os meus dias estruturando códigos limpos, conectando APIs, gerenciando fluxos com metodologias ágeis e acumulando commits. A skin Fullstack integrada é a minha realidade absoluta de mercado.</p>
 
-            <!-- Pergunta 3 -->
-            <section class="card question-card">
-                <h2>Pergunta 3: Escreva um exemplo de senha forte</h2> 
-                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua senha aqui">
-            </section> 
+    <hr>
 
-            <!-- Pergunta 4 -->
-            <section class="card question-card">
-                <h2>Pergunta 4: Qual é a data de lançamento da primeira versão do HTML?</h2>
-                <input type="date" id="p4" name="pergunta4">
-            </section> 
+    <h3>🔮 Meu Tech Stack & Ferramentas</h3>
+    
+    <div class="stack-grid">
+        <div class="stack-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python">
+            <span>Python (Pandas)</span>
+        </div>
+        <div class="stack-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java">
+            <span>Java</span>
+        </div>
+        <div class="stack-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+            <span>JavaScript</span>
+        </div>
+        <div class="stack-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="SQL">
+            <span>SQL</span>
+        </div>
+        <div class="stack-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git">
+            <span>Git / GitHub</span>
+        </div>
+        <div class="stack-card">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5">
+            <span>HTML5 / CSS3</span>
+        </div>
+    </div>
 
-            <!-- Pergunta 5 -->
-            <section class="card question-card">
-                <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
-                <div class="options-group">
-                    <label><input type="checkbox" name="pergunta5" value="JavaScript"> JavaScript</label>
-                    <label><input type="checkbox" name="pergunta5" value="HTML"> HTML</label>
-                    <label><input type="checkbox" name="pergunta5" value="Python"> Python</label>
-                    <label><input type="checkbox" name="pergunta5" value="C++"> C++</label>
-                </div>
-            </section>
+    <p><strong>Core Técnico (Full-Stack & Gestão):</strong></p>
+    <ul>
+        <li>🌐 <strong>Front-end & Back-end:</strong> Desenvolvimento de interfaces responsivas com HTML5, CSS3 e JavaScript, além de lógica de sistemas e manipulação de dados utilizando Java, Python (com Pandas) e bancos de dados relacionais via SQL.</li>
+        <li>⚙️ <strong>Ferramentas & DevOps:</strong> Versionamento de código com Git/GitHub e acompanhamento de infraestrutura com Azure DevOps.</li>
+        <li>🌟 <strong>Metodologias Ágeis:</strong> Organização de sprints, fluxos de entrega e rastreio de demandas utilizando Jira, Azure DevOps e quadros Kanban.</li>
+    </ul>
 
-            <!-- Pergunta 6 -->
-            <section class="card question-card">
-                <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
-                <input type="file" id="p6" name="pergunta6">
-            </section>
+    <hr>
 
-            <!-- Pergunta 7 -->
-            <section class="card question-card">
-                <h2>Pergunta 7: Selecione o atributo do input que define seu tipo</h2>
-                <select id="p7" name="pergunta7">
-                    <option value="" disabled selected>Selecione...</option>
-                    <option value="id">id</option>
-                    <option value="type">type</option>
-                    <option value="placeholder">placeholder</option>
-                </select>
-            </section>
+    <h3>📈 Estatísticas do Meu Ecossistema</h3>
+    <div class="stats">
+        <img src="https://github-readme-stats.vercel.app/api?username=solenetavares&show_icons=true&theme=omni&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" height="150" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=solenetavares&layout=compact&theme=omni" alt="Linguagens mais usadas" height="150" />
+    </div>
 
-            <!-- Pergunta 8 -->
-            <section class="card question-card">
-                <h2>Pergunta 8: Qual linguagem de programação é representada na imagem abaixo?</h2>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo do JavaScript" width="150">
-                    <figcaption>Logo oficial</figcaption>
-                </figure>
-                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta aqui">
-            </section>
-        </form>
+    <hr>
 
-        <!-- Tabela de Pontuação -->
-        <section class="card table-card">
-            <h2>Tabela de Pontuação</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Pontuação</th>
-                        <th>Avaliação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0-2</td>
-                        <td>Não desista! Cada tentativa é uma oportunidade de aprender.</td>
-                    </tr> 
-                    <tr>
-                        <td>2-4</td>
-                        <td>Ainda pode melhorar! Continue praticando.</td>
-                    </tr>
-                    <tr>
-                        <td>4-7</td>
-                        <td>Parabéns! Você está no caminho certo.</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Excelente! Você é um verdadeiro expert.</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">Lembre-se: a prática leva à perfeição!</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+    <h3>⚙️ Conecte-se ao meu Sistema:</h3>
+    <ul class="contact-list">
+        <li>📩 <strong>E-mail:</strong> <a href="mailto:solenetavares06@gmail.com">solenetavares06@gmail.com</a></li>
+    </ul>
 
-        <!-- Lista de Respostas -->
-        <section class="card answers-card">
-            <h2>Respostas do Quiz</h2>
-            <details>
-                <summary>Clique aqui para ver as respostas</summary>
-                <ol>
-                    <li><strong>Pergunta 1:</strong> c) HTML</li>
-                    <li><strong>Pergunta 2:</strong> Domínio</li>
-                    <li><strong>Pergunta 3:</strong> Exemplo de senha forte: P@ssw0rd!2024</li>
-                    <li><strong>Pergunta 4:</strong> 1993-01-01</li>
-                    <li><strong>Pergunta 5:</strong> JavaScript, Python, C++</li>
-                    <li><strong>Pergunta 6:</strong> Arquivo de código HTML</li>
-                    <li><strong>Pergunta 7:</strong> type</li>
-                    <li><strong>Pergunta 8:</strong> JavaScript</li>
-                </ol>
-            </details>
-        </section>
+    <div class="footer">
+        <p>"something 'bout me" 🎀</p>
+    </div>
 
-        <!-- Formulário de Feedback -->
-        <section class="card feedback-card">
-            <h2>Nos diga o que você achou do quiz e deixe seu feedback!</h2>
-            <form id="feedback-form">
-                <fieldset>
-                    <legend>Formulário de Feedback</legend>   
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    
-                    <label for="feedback">Feedback:</label>
-                    <textarea id="feedback" name="feedback" placeholder="Digite seu feedback aqui..." required></textarea>
-                    
-                    <button type="submit">Enviar Feedback</button>
-                </fieldset>         
-            </form>
-        </section>
-    </main>
+</div>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Quiz para Programadores. Todos os direitos reservados.</p>
-        <p>Para conhecer outros quizes <a href="fds.html" target="_blank">clique aqui</a></p>  
-    </footer>
 </body>
 </html>
