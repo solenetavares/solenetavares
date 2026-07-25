@@ -1,70 +1,175 @@
-# <span style="color:#D8BFD8;">🔮 Solene Tavares</span> | <span style="color:#FFB6C1;">Software Engineering Student</span>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo para Programadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Quiz Interativo para Programadores</h1>
+        <p><strong>Teste seus conhecimentos em programação e veja qual a sua pontuação!</strong></p>
+    </header>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Status-Codando_no_Off-D8BFD8?style=for-the-badge&logoColor=black&labelColor=FFB6C1" alt="Status" />
-  <img src="https://img.shields.io/badge/Focus-Systems_%26_Data_Analysis-FFB6C1?style=for-the-badge&logoColor=black&labelColor=D8BFD8" alt="Foco" />
-</p>
+    <main class="quiz-container">
+        <!-- Introdução -->
+        <section class="card intro-card">
+            <h2>Sobre esse quiz</h2>
+            <p>Este quiz foi desenvolvido para desafiar programadores de todos os níveis. Ele contém uma série de perguntas que abrangem diferentes áreas da programação, desde lógica básica até conceitos avançados.</p>
+            <p>Ao final do quiz, você receberá uma pontuação que refletirá seu desempenho. Prepare-se para testar seus conhecimentos e aprender algo novo!</p>
+            <p>Você poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são linguagens de marcação e estilo, respectivamente. Além disso, conceitos como algoritmos, estruturas de dados e paradigmas de programação também serão abordados.</p>
+            <p><strong>Boa sorte!</strong></p>
+        </section>
 
-### 🎀 Seja bem-vindo(a) ao meu servidor! 
+        <!-- Formulário Geral do Quiz -->
+        <form id="quiz-form">
+            <!-- Pergunta 1 -->
+            <section class="card question-card">
+                <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas na web?</h2>
+                <div class="options-group">
+                    <label><input type="radio" value="Python" name="pergunta1"> a) Python</label>
+                    <label><input type="radio" value="Java" name="pergunta1"> b) Java</label>
+                    <label><input type="radio" value="HTML" name="pergunta1"> c) HTML</label>
+                    <label><input type="radio" value="C++" name="pergunta1"> d) C++</label>
+                </div>
+            </section> 
 
-Sou estudante de **Engenharia de Software** com foco estratégico em **Análise de Sistemas e Análise de Dados**. O meu objetivo no ecossistema de tecnologia é traduzir requisitos de negócios em sistemas eficientes e transformar grandes volumes de dados brutos em insights valiosos para a tomada de decisão.
+            <!-- Pergunta 2 -->
+            <section class="card question-card">
+                <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o ________</h2>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui">
+            </section>
 
-Atualmente, passo os meus finais de semana no off refinando a minha lógica em algoritmos, limpando bases de dados, criando queries complexas e acumulando commits. Até o fim do ano, a skin Fullstack integrada à análise de sistemas e dados será a minha realidade absoluta de mercado.
+            <!-- Pergunta 3 -->
+            <section class="card question-card">
+                <h2>Pergunta 3: Escreva um exemplo de senha forte</h2> 
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua senha aqui">
+            </section> 
 
----
+            <!-- Pergunta 4 -->
+            <section class="card question-card">
+                <h2>Pergunta 4: Qual é a data de lançamento da primeira versão do HTML?</h2>
+                <input type="date" id="p4" name="pergunta4">
+            </section> 
 
-### <span style="color:#D8BFD8;">🔮 Meu Tech Stack, Dados & Ferramentas</span>
+            <!-- Pergunta 5 -->
+            <section class="card question-card">
+                <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+                <div class="options-group">
+                    <label><input type="checkbox" name="pergunta5" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" name="pergunta5" value="HTML"> HTML</label>
+                    <label><input type="checkbox" name="pergunta5" value="Python"> Python</label>
+                    <label><input type="checkbox" name="pergunta5" value="C++"> C++</label>
+                </div>
+            </section>
 
-<table>
-  <tr>
-    <td align="center" width="120" bgcolor="#FFB6C1">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40" alt="Python" />
-      <br /><b><font color="#000000">Python (Pandas)</font></b>
-    </td>
-    <td align="center" width="120" bgcolor="#D8BFD8">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" height="40" alt="Java" />
-      <br /><b><font color="#000000">Java (JDK 21)</font></b>
-    </td>
-    <td align="center" width="120" bgcolor="#FFB6C1">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
-      <br /><b><font color="#000000">JavaScript</font></b>
-    </td>
-    <td align="center" width="120" bgcolor="#D8BFD8">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40" alt="SQL" />
-      <br /><b><font color="#000000">SQL / DB</font></b>
-    </td>
-    <td align="center" width="120" bgcolor="#FFB6C1">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40" alt="Git" />
-      <br /><b><font color="#000000">Git / GitHub</font></b>
-    </td>
-    <td align="center" width="120" bgcolor="#D8BFD8">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
-      <br /><b><font color="#000000">HTML5 / CSS3</font></b>
-    </td>
-  </tr>
-</table>
+            <!-- Pergunta 6 -->
+            <section class="card question-card">
+                <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+                <input type="file" id="p6" name="pergunta6">
+            </section>
 
-**Core Técnico (Sistemas & Análise de Dados):** * 🔮 **Análise de Sistemas:** Engenharia de Requisitos, Mapeamento de Processos, Regras de Negócio e Diagramação UML.
-* 📊 **Análise de Dados:** Exploração, limpeza e manipulação de dados (Data Wrangling) com Python, consultas avançadas em bancos de dados relacionais (SQL) e extração de métricas.
-* 🌟 **Metodologias:** Gestão ágil de projetos e fluxos de trabalho com Scrum e Kanban.
+            <!-- Pergunta 7 -->
+            <section class="card question-card">
+                <h2>Pergunta 7: Selecione o atributo do input que define seu tipo</h2>
+                <select id="p7" name="pergunta7">
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </section>
 
----
+            <!-- Pergunta 8 -->
+            <section class="card question-card">
+                <h2>Pergunta 8: Qual linguagem de programação é representada na imagem abaixo?</h2>
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo do JavaScript" width="150">
+                    <figcaption>Logo oficial</figcaption>
+                </figure>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta aqui">
+            </section>
+        </form>
 
-### <span style="color:#FFB6C1;">📈 Estatísticas do Meu Ecossistema</span>
+        <!-- Tabela de Pontuação -->
+        <section class="card table-card">
+            <h2>Tabela de Pontuação</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Cada tentativa é uma oportunidade de aprender.</td>
+                    </tr> 
+                    <tr>
+                        <td>2-4</td>
+                        <td>Ainda pode melhorar! Continue praticando.</td>
+                    </tr>
+                    <tr>
+                        <td>4-7</td>
+                        <td>Parabéns! Você está no caminho certo.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Excelente! Você é um verdadeiro expert.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Lembre-se: a prática leva à perfeição!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=solenetavares&show_icons=true&theme=omni&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=solenetavares&layout=compact&theme=omni" alt="Linguagens mais usadas" height="150" />
-</p>
+        <!-- Lista de Respostas -->
+        <section class="card answers-card">
+            <h2>Respostas do Quiz</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas</summary>
+                <ol>
+                    <li><strong>Pergunta 1:</strong> c) HTML</li>
+                    <li><strong>Pergunta 2:</strong> Domínio</li>
+                    <li><strong>Pergunta 3:</strong> Exemplo de senha forte: P@ssw0rd!2024</li>
+                    <li><strong>Pergunta 4:</strong> 1993-01-01</li>
+                    <li><strong>Pergunta 5:</strong> JavaScript, Python, C++</li>
+                    <li><strong>Pergunta 6:</strong> Arquivo de código HTML</li>
+                    <li><strong>Pergunta 7:</strong> type</li>
+                    <li><strong>Pergunta 8:</strong> JavaScript</li>
+                </ol>
+            </details>
+        </section>
 
----
+        <!-- Formulário de Feedback -->
+        <section class="card feedback-card">
+            <h2>Nos diga o que você achou do quiz e deixe seu feedback!</h2>
+            <form id="feedback-form">
+                <fieldset>
+                    <legend>Formulário de Feedback</legend>   
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" placeholder="Digite seu feedback aqui..." required></textarea>
+                    
+                    <button type="submit">Enviar Feedback</button>
+                </fieldset>         
+            </form>
+        </section>
+    </main>
 
-### <span style="color:#D8BFD8;">⚙️ Conecte-se ao meu Sistema:</span>
-
-* 📩 **E-mail:** solenetavares06@gmail.com
-
-<br />
-
-<p align="center">
-  <font color="#FFB6C1"><i>"something 'bout me"</i> 🎀</font>
-</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Quiz para Programadores. Todos os direitos reservados.</p>
+        <p>Para conhecer outros quizes <a href="fds.html" target="_blank">clique aqui</a></p>  
+    </footer>
+</body>
+</html>
